@@ -1,5 +1,4 @@
 package pattern.intelligence
-package pattern.intelligence
 
 import org.apache.logging.log4j.{Level, LogManager}
 import org.apache.spark.sql.SparkSession
