@@ -30,7 +30,10 @@ lazy val root = (project in file(".")).
       "com.fasterxml.jackson.core" % "jackson-databind" % "2.16.1",
       "org.scalatest" %% "scalatest" % "3.3.0-SNAP4",
       "org.scalactic" %% "scalactic" % "3.3.0-SNAP4"
-    )
+    ),
+
+    buildInfoKeys := Seq[BuildInfoKey](name, version, scalaVersion, sbtVersion),
+    buildInfoPackage := "buildInfoText"
 
   )
 
