@@ -17,6 +17,8 @@ class EnvironmentPaths {
 
   // Data Directory
   val dataDirectory: String = Paths.get(projectDirectory, "data").toString
+  val coded: String = Paths.get(projectDirectory, "data", "coded").toString
+  val decoded: String = Paths.get(projectDirectory, "data", "decoded").toString
 
   // Warehouse Directory
   val warehouseDirectory: String = Paths.get(projectDirectory, "warehouse").toString
