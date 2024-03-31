@@ -36,7 +36,10 @@ object ExperimentsApp {
      *                             running slowly in a stage, they will be re-launched."
      */
     val threads: Int = scala.math.ceil(java.lang.Runtime.getRuntime.availableProcessors()).toInt
-    println(threads)
+    val limit: Int = math.floor(threads / 2).toInt
+    spark.conf.set("spark.sql.shuffle.partitions", limit.toString)
+    spark.conf.set("spark.default.parallelism", limit.toString)
+
 
     val environmentDirectories = new EnvironmentDirectories()
     List(environmentPaths.coded, environmentPaths.decoded).foreach { pathString: String =>
