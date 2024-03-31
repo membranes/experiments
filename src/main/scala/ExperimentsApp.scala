@@ -29,9 +29,11 @@ object ExperimentsApp {
     // Spark Logs
     spark.sparkContext.setLogLevel("ERROR")
 
-    // Configuring
+    // Deducing the # of machine threads
     val threads: Int = scala.math.ceil(java.lang.Runtime.getRuntime.availableProcessors()).toInt
     val limit: Int = math.floor(threads / 2).toInt
+
+    // Configuring
     spark.conf.set("spark.sql.shuffle.partitions", limit.toString)
     spark.conf.set("spark.default.parallelism", limit.toString)
 
