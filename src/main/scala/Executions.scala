@@ -9,15 +9,16 @@ import java.nio.file.Paths
 class Executions(spark: SparkSession) {
 
   private val environmentPaths = new EnvironmentPaths()
-  val environmentDirectories = new EnvironmentDirectories()
+  private val environmentDirectories = new EnvironmentDirectories()
 
   def executions(): Unit = {
 
-
+    val urlString = "https://download.companieshouse.gov.uk/BasicCompanyData-2024-03-01-part1_7.zip"
+    val name = urlString.split("/").last.trim
 
     val fetchDataURL = new FetchDataURL()
-    fetchDataURL.fetchDataURL(urlString = "",
-      pathString = Paths.get(environmentPaths.dataDirectory, "").toString)
+    fetchDataURL.fetchDataURL(urlString = urlString,
+      pathString = Paths.get(environmentPaths.coded, name).toString)
 
   }
 
