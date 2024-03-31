@@ -14,8 +14,9 @@ object ExperimentsApp {
     logger.log(Level.forName("aka", 0), "for: aka")
 
     // Spark Session
-    val spark: SparkSession = SparkSession.builder().appName("Experiments")
-      .config("spark.serializer", "org.apache.spark.KryoSerializer")
+    val spark: SparkSession = SparkSession.builder()
+      .appName("ExperimentsApp")
+      .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
       .config("spark.sql.warehouse.dir", "")
       .getOrCreate()
 
