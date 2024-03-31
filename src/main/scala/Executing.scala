@@ -6,7 +6,7 @@ import environment.{EnvironmentDirectories, EnvironmentPaths}
 
 import java.nio.file.Paths
 
-class Executions(spark: SparkSession) {
+class Executing(spark: SparkSession) {
 
   private val environmentPaths = new EnvironmentPaths()
   private val environmentDirectories = new EnvironmentDirectories()
