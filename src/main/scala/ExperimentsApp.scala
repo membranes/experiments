@@ -2,8 +2,13 @@ package pattern.intelligence
 
 import org.apache.logging.log4j.{Level, LogManager}
 import org.apache.spark.sql.SparkSession
+import pattern.intelligence.environment.{EnvironmentDirectories, EnvironmentPaths}
+
+
 
 object ExperimentsApp {
+
+  val environmentPaths = new EnvironmentPaths()
 
   def main(args: Array[String]): Unit = {
 
@@ -32,6 +37,11 @@ object ExperimentsApp {
      */
     val threads: Int = scala.math.ceil(java.lang.Runtime.getRuntime.availableProcessors()).toInt
     println(threads)
+
+    val environmentDirectories = new EnvironmentDirectories()
+    List(environmentPaths.coded, environmentPaths.decoded).foreach { pathString: String =>
+      environmentDirectories.reset(directoryName = pathString)
+    }
 
   }
 
