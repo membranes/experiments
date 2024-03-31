@@ -2,32 +2,25 @@
 
 **Experiments**
 
-<br>
-
 
 ### Notes
 
-[Configuring for computation](src/main/scala/ExperimentsApp.scala):
+#### [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html)
 
-* [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html)
+The focus herein is _configuring for computation_; study [ExperimentsApp](src/main/scala/ExperimentsApp.scala).  Examples 
+include the # of shuffle partitions for joins & aggregation:
 
-Deducing the # of machine threads
-> ```scala
-> java.lang.Runtime.getRuntime.availableProcessors()
-> ```
-
-The # of shuffle partitions for joins & aggregation
 > ```scala
 > spark.conf.set("spark.sql.shuffle.partitions", String)
 > ```
 
-The default # of partitions delivered after a transformation
+The default # of partitions delivered after a transformation:
 
 > ```scala
 > spark.conf.set("spark.default.parallelism", String)
 > ```
 
-If true "performs speculative execution of tasks. This means if one or more tasks are
+Speculative execution $\rightarrow$ if true "performs speculative execution of tasks. This means if one or more tasks are
 running slowly in a stage, they will be re-launched."
 
 > ```scala
