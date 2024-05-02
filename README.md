@@ -2,10 +2,11 @@
 
 **Experiments**
 
+<br>
 
-### Notes
+## Notes
 
-#### [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html)
+* [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html)
 
 The focus herein is _configuring for computation_; study [ExperimentsApp](src/main/scala/ExperimentsApp.scala).  Examples 
 include the # of shuffle partitions for joins & aggregation:
@@ -29,7 +30,7 @@ running slowly in a stage, they will be re-launched."
 
 <br>
 
-### Project
+## Project
 
 Directory Structure:
   * [sbt](https://www.scala-sbt.org/1.x/docs/Directories.html)
@@ -37,7 +38,7 @@ Directory Structure:
 
 <br>
 
-### Development
+### SBT (Scala Build Tool)
 
 * [sbt plugins](https://www.scala-sbt.org/1.x/docs/Community-Plugins.html)
 * [sbt assembly](https://github.com/sbt/sbt-assembly)
@@ -46,6 +47,35 @@ Directory Structure:
   * [packaging](https://www.baeldung.com/scala/package-app)
 * [sbt build information](https://github.com/sbt/sbt-buildinfo#latest-stable)
   * [example](https://www.baeldung.com/scala/sbt-generate-build-info)
+
+
+<br>
+
+
+### Maven
+
+* [settings](https://maven.apache.org/settings.html)
+* [classpath](https://maven.apache.org/shared-archives/maven-archiver-2.5/examples/classpath.html)
+
+* [scala & maven](https://docs.scala-lang.org/tutorials/scala-with-maven.html)
+* [.jar](https://docs.scala-lang.org/tutorials/scala-with-maven.html#creating-a-jar)
+* [maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/usage.html)
+
+
+<br>
+
+
+## Snippets
+
+```shell
+mvn -Pconnect -DskipTests clean package
+```
+
+```shell
+spark-submit --class pattern.intelligence.FociApp --master local[2] \
+	target/foci-...-jar-with-dependencies.jar 
+```
+
 
 <br>
 <br>
