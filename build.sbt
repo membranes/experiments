@@ -12,7 +12,7 @@ lazy val root = (project in file(".")).
 	  "Maven Central" at "https://repo1.maven.org/maven2/",
 	  "Artima Maven Repository" at "https://repo.artima.com/releases",
 	  "JBoss Enterprise Maven Repository" at "https://maven.repository.redhat.com/ga/",
-      "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+    "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
     ),
 
     assembly / mainClass := Some("ExperimentsApp"),
