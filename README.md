@@ -76,6 +76,18 @@ spark-submit --class pattern.intelligence.FociApp --master local[2] \
 	target/foci-...-jar-with-dependencies.jar 
 ```
 
+<br>
+
+## References
+
+Authenticating
+* [Software Development & Credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html)
+
+Amazon Web Services (AWS) & Software Development Kit (SDK):
+* [Artefacts](https://mvnrepository.com/artifact/com.amazonaws)
+* [AWS Java SDK for Amazon S3 (Simple Storage Service)](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3)
+* [AWS Java SDK for AWS STS (Security Token Service)](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sts)
+* [AWS SDK for Java](https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk)
 
 <br>
 <br>
