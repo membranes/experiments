@@ -1,7 +1,7 @@
 <br>
 
 > [!NOTE]
-> In Progess
+> In Progress
 
 <br>
 
