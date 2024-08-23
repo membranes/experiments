@@ -51,7 +51,10 @@ running slowly in a stage, they will be re-launched."
 > spark.conf.set("spark.speculation", Boolean)
 > ```
 
+
 <br>
+<br>
+
 
 ## Snippets
 
@@ -64,7 +67,11 @@ spark-submit --class pattern.intelligence.FociApp --master local[2] \
 	target/foci-...-jar-with-dependencies.jar 
 ```
 
+
 <br>
+<br>
+
+
 
 ## References
 
