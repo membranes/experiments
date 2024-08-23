@@ -1,17 +1,10 @@
 <br>
 
-**Networks**
-
-<br>
-
 ## Project Environment
 
 For more about directory structures visit:
   * [sbt](https://www.scala-sbt.org/1.x/docs/Directories.html)
   * [maven](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
-
-
-<br>
 
 
 ### SBT (Scala Build Tool)
@@ -25,9 +18,6 @@ For more about directory structures visit:
   * [example](https://www.baeldung.com/scala/sbt-generate-build-info)
 
 
-<br>
-
-
 ### Maven
 
 * [settings](https://maven.apache.org/settings.html)
@@ -35,9 +25,6 @@ For more about directory structures visit:
 * [scala & maven](https://docs.scala-lang.org/tutorials/scala-with-maven.html)
 * [.jar](https://docs.scala-lang.org/tutorials/scala-with-maven.html#creating-a-jar)
 * [maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/usage.html)
-
-
-<br>
 
 
 ### Apache Spark Configurations
