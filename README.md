@@ -32,7 +32,6 @@ For more about directory structures visit:
 
 * [settings](https://maven.apache.org/settings.html)
 * [classpath](https://maven.apache.org/shared-archives/maven-archiver-2.5/examples/classpath.html)
-
 * [scala & maven](https://docs.scala-lang.org/tutorials/scala-with-maven.html)
 * [.jar](https://docs.scala-lang.org/tutorials/scala-with-maven.html#creating-a-jar)
 * [maven compiler plugin](https://maven.apache.org/plugins/maven-compiler-plugin/usage.html)
